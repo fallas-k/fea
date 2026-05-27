@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escénicas - Festival Estudiantil de las Artes 2026</title>
+
+  <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+
+  <header>
+      <img src="../Imagenes/26FEA.png" alt="Logo FEA" class="logo-fea">
+    <h1>Coreografía De Proyección Folclórica Costarricense</h1>
+    <p>Festival Estudiantil de las Artes 2026 — Formulario de Calificación</p>
+      <button class="btn-volver-top" onclick="history.back()">
+      ← Volver
+    </button>
+  </header>
+
+  <div class="container">
+
+    <!-- DATOS -->
+    <div class="juez-panel">
+      <h2>Datos del Juez y Participante</h2>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Nombre del Juez</label>
+          <input type="text" id="nombre-juez" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Nombre del Participante</label>
+          <input type="text" id="nombre-participante" placeholder="Nombre del participante">
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Nombre de la Coreografía</label>
+          <input type="text" id="nombre-coreografia" placeholder="Título de la obra">
+        </div>
+
+        <input type="hidden" id="centro-educativo" value="CTP Jose Figueres Ferrer">
+
+      </div>
+      
+          <!-- Información importante -->
+  <div class="info-cuentacuentos">
+
+    <div class="info-header">
+      ℹ Información Importante para Evaluación
+    </div>
+
+    <div class="info-body">
+
+      <p class="alerta-privada">
+        <strong>Este documento es de uso privado del equipo seleccionador.</strong>
+      </p>
+
+      <p>
+        <strong>Definición de coreografía de proyección folclórica costarricense:</strong>
+            para efectos del Festival Estudiantil de las Artes, coreografía de proyección folclórica costarricense se refiere a una agrupación de estudiantes que interpreta con bailes, una canción folclórica o típica costarricense. La coreografía puede ser original e inédita, o también una danza típica o tradicional, es decir, puede presentarse una reproducción completa de una danza tradicional, popular o baile folclórico costarricense, que en este caso no conserva las características de original e inédito. Cualquier coreografía que se presente en esta disciplina, se basa en pasos que se han practicado dentro del contexto de coreografías tradicionales costarricenses, en cuanto a movimientos, vestuarios y trajes típicos o alegóricos, relacionados con una época, zona geográfica o tradición o a una canción o a música típica o folclórica costarricense. Puede ser intervenida con pasos de danza contemporánea y danza popular o similares, pero debe prevalecer, en la mayoría de la coreografía, los pasos o movimientos que se han considerado como parte de la danza folclórica o típica nacional. 
+      </p>
+
+      <div class="niveles-box">
+        <label>
+          <input type="checkbox" name="nivel" value="primaria">
+          ¿Niños y niñas de primaria?
+        </label>
+
+        <label>
+          <input type="checkbox" name="nivel" value="secundaria">
+          ¿Personas adolescentes y jóvenes de secundaria?
+        </label>
+
+        <label>
+          <input type="checkbox" name="nivel" value="adultos">
+          ¿Educación de personas jóvenes y adultas de primaria o secundaria?
+        </label>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 1 -->
+    <div class="rubrica-seccion">
+
+      <div class="seccion-header rosa">
+        <span>Aspectos Formativos de la Propuesta Artística</span>
+        <span class="seccion-puntos" id="pts-sec1">0 pts</span>
+      </div>
+
+      <div id="sec1-criterios"></div>
+
+    </div>
+
+    <!-- SECCIÓN 2 -->
+    <div class="rubrica-seccion">
+
+      <div class="seccion-header gris">
+        <span>Respeta lo Estipulado en el Manual de Disciplinas Artísticas</span>
+        <span class="seccion-puntos" id="pts-sec2">0 pts</span>
+      </div>
+
+      <div id="sec2-criterios"></div>
+
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <div class="rubrica-seccion">
+
+      <div class="seccion-header oscuro">
+        <span>Aspectos Técnico-Artísticos</span>
+        <span class="seccion-puntos" id="pts-sec3">0 pts</span>
+      </div>
+
+      <div id="sec3-criterios"></div>
+
+    </div>
+    
+    <!-- ANEXO 3 -->
+<div class="anexo-panel oculto" id="anexo1">
+
+  <div class="anexo-header">
+    📘 Anexo 3. Coreografía de proyección folclórica costarricense 
+
+  </div>
+
+  <button class="btn-cerrar-anexo" onclick="toggleAnexo()">
+    ✖ Cerrar Anexo
+  </button>
+
+    <div class="anexo-body">
+
+      <h3>Vestuario</h3>
+      <p>
+en este aspecto, lo primordial es que el vestuario sea alusivo al tema que cada grupo escoge para realizar 
+la coreografía. No es pertinente valorar si un vestuario de un grupo es mejor que el de otro; más bien se evalúa si el vestuario se relaciona 
+con el tema de la obra y lo representa. Los accesorios y la utilería se refieren a todos los elementos que se colocan en el escenario, por 
+ejemplo: sillas, manta, bastones, paraguas, periódicos, cuerdas, mesas, etc. Estos no son necesarios ni obligatorios, por lo que la ausencia de 
+ellos no debe repercutir en la valoración. Si se utilizan, cada elemento debe estar justificado y debe ser coherente con el tema y cumplir una 
+función específica dentro de la temática de la coreografía. En la valoración, no debe existir repercusión negativa o positiva en cuanto a la 
+calidad (costo) o la cantidad de los vestuarios o accesorios y utilería.    </p>
+      <h3>Maquillaje</h3>
+      <p>
+debe estar acorde con el tema y relacionarse completamente con la obra coreográfica. Ya sea sin maquillaje, un maquillaje 
+sencillo o uno más complicado, este debe estar en estrecha relación con la temática de la coreografía. En la valoración, no debe existir 
+repercusión negativa o positiva en cuanto a la calidad (costo) o ausencia del maquillaje si esto se justifica.       </p>
+
+      <h3>Coordinación</h3>
+      <p>
+tradicionalmente, las coreografías se hacen al unísono (a una sola voz), es decir, siempre todas las personas bailan igual, o 
+sea, todos y todas realizan los mismos pasos. Lo anterior es válido. Sin embargo, se debe tener cuidado porque eso no siempre es así, pues 
+pueden crearse coreografías en las que se realizan movimientos y pasos distintos entre los integrantes del grupo. En ambos casos, ya sea si 
+todos los integrantes de la agrupación van juntos y con el tiempo musical (bailando todos/as igual), o bien, van bailando en forma 
+diferente, individual o en subgrupos, la intención de la coreografía debe ser clara y bien justificada.       </p>
+
+      <h3>Presencia escénica</h3>
+      <p>
+ es la manera en que los bailarines y las bailarinas se muestran ante el público, fuera de miedos, inseguridades, 
+titubeos, entre otras actitudes que les hace estar dudosos/as de su actuación y de la forma en la que cada persona debe expresarse durante 
+la presentación. La presencia escénica se refiere a la manifestación emocional producida con el cuerpo. No necesariamente significa sonreír 
+en la coreografía. Es el reflejo de cada emoción: la tristeza, la alegría, el anhelo, el amor, la paz, o lo que se desee comunicar. Tiene que ver 
+con la forma en la que se expresa el bailarín o la bailarina en el escenario.       </p>
+
+      <h3>Espacio escénico / diseño coreográfico. Orden entre las formaciones</h3>
+      <p>
+deben ser muy claras: - Filas: son horizontales-Ventanas: filas en 
+medio de las filas, es decir, se aprovecha el espacio que queda entre los integrantes de la fila de adelante para crear una fila detrás, donde 
+todas las personas se vean. -Columnas: van hacia el fondo del escenario, o sea, una persona detrás de la otra. También se pueden crear 
+otras estructuras, círculos, una masa agrupada de personas, etc. 
+      </p>
+
+      <h3>Espacio escénico / diseño coreográfico. Uso del espacio escénico:</h3>
+      <p>
+es la utilización correcta de toda el área de baile. El área de baile es 
+un todo, donde se pueden desarrollar muchas situaciones en la totalidad del espacio. El uso del espacio y su utilización deben estar claros. 
+No representa un buen uso del espacio escénico: la concentración de las bailarinas y los bailarines en un solo lugar. Esto hace que todo se 
+vea recargado de un lado (sin embargo, hay que tomar en cuenta que la coreografía puede justificar esto en una de sus partes y que más 
+bien puede que sea intencional. En este caso, esto no representa mal uso del espacio, siempre y cuando se haga con claridad y 
+premeditación). Un mal uso del espacio también puede ser no aprovechar la parte de atrás y recargar todo adelante, o bien, no aprovechar 
+la parte de adelante y recargar todo atrás.      </p>
+
+      <h3>Limpieza y claridad de los movimientos</h3>
+      <p>
+un movimiento claro y limpio es aquel movimiento que se puede ver de principio a fin con 
+claridad. En ocasiones, por la velocidad o complejidad, los movimientos se ensucian, es decir, se enredan. Es como si iniciara uno sin 
+terminar el otro, y al final no se ve bien ni uno ni otro. Debe ser claro, no por esto sacrificar el nivel de complejidad, sino más bien 
+mejorarlo.  
+      </p>
+
+      <h3>Acople general:</h3>
+      <p>
+la coreografía puede inspirarse en un tema musical, en la letra de la canción, una pintura, un cuento, una leyenda, una 
+obra teatro, un poema, etc. Las investigaciones e indagaciones para buscar y crear pasos, movimientos, frases, elementos, vestuarios, 
+escenografías, maquillaje, entre otros, deben estar acorde con el tema de la obra en sí. Todo lo anterior, en armonía y coherencia. Los pasos 
+y las figuras, la letra de la canción, los vestuarios, el maquillaje, los accesorios si los hay, entre otros, deben estar estrechamente 
+relacionados. Un buen acople indica que la música seleccionada es apropiada para la coreografía realizada y viceversa. En otras palabras, la 
+relación de todos los elementos anteriores debe ser clara. El tema escogido se refleja en la coreografía; por lo tanto, da referencia de lo que 
+se quiere comunicar. La coreografía transmite ideas, al igual que cualquier obra artística. 
+      </p>
+
+      <h3>Complejidad</h3>
+      <p>
+cada coreografía tiene un nivel de dificultad. No es lo mismo coordinar una coreografía en la que se repite muchas veces el 
+mismo movimiento de cada lado, a una que tiene frases. Es la manera en que se desarrolla la coreografía de una forma interesante, atractiva 
+y llamativa. No es necesario crear grandes hazañas, pero si las hubiere, estas deben ser bien resueltas.      </p>
+
+    </div>
+
+  </div>
+
+    <!-- TOTALES -->
+    <div class="totales">
+
+      <h2>Resumen de Puntuación</h2>
+
+      <div class="totales-grid">
+
+        <div class="total-card rosa-bg">
+          <div class="numero" id="total-sec1">0</div>
+          <div class="etiqueta">Formativos</div>
+        </div>
+
+        <div class="total-card gris-bg">
+          <div class="numero" id="total-sec2">0</div>
+          <div class="etiqueta">Manual</div>
+        </div>
+
+        <div class="total-card oscuro-bg">
+          <div class="numero" id="total-sec3">0</div>
+          <div class="etiqueta">Técnico-Artísticos</div>
+        </div>
+
+        <div class="total-card total-bg">
+          <div class="numero" id="total-general">0</div>
+          <div class="etiqueta">Total General</div>
+        </div>
+
+      </div>
+
+      <!-- RECOMENDACIÓN -->
+      <div class="recomendacion">
+        <input type="checkbox" id="check-recomendacion">
+
+        <label for="check-recomendacion">
+          Propongo esta obra para ser considerada en la deliberación con posibilidad de ser invitada a la siguiente etapa del festival.
+        </label>
+      </div>
+
+    </div>
+
+    <!-- BOTÓN -->
+    <button class="btn-guardar" onclick="guardarCalificacion()">
+      💾 Guardar Calificación
+    </button>
+
+    <!-- ADMIN -->
+    <a class="btn-admin-link" onclick="abrirModalAdmin()">
+      🔒 Acceso de Administrador
+    </a>
+
+    <!-- IMÁGENES -->
+    <div class="final-photo">
+      <img src="../Imagenes/LOGOCIBER.png" alt="Marca de agua FEA">
+      <img src="../Imagenes/LogoCTPJFF.png" alt="Marca de agua FEA">
+    </div>
+
+  </div>
+
+  <!-- MODAL ADMIN -->
+  <div class="modal-overlay" id="modal-admin">
+
+    <div class="modal">
+
+      <h3>🔒 Acceso Restringido</h3>
+
+      <p style="font-size:0.85rem; color:#666; margin-bottom:1rem; font-family:Arial,sans-serif;">
+        Solo el equipo administrador puede ver los resultados guardados.
+      </p>
+
+      <input type="password" id="input-password" placeholder="Contraseña de administrador">
+
+      <div class="modal-btns">
+        <button onclick="verificarAdmin()">Ingresar</button>
+        <button onclick="cerrarModalAdmin()">Cancelar</button>
+      </div>
+
+      <p id="error-admin"
+        style="color:red; font-size:0.8rem; margin-top:0.5rem; display:none; font-family:Arial,sans-serif;">
+        Contraseña incorrecta.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- PANEL ADMIN -->
+  <div class="container">
+
+    <div id="admin-panel" style="display:none;">
+
+      <div class="admin-header">
+
+        <span>📊 Resultados Guardados — Coreografía</span>
+
+        <div style="display:flex; gap:0.5rem;">
+          <button onclick="exportarCSV()">Exportar CSV</button>
+          <button onclick="limpiarDatos()">Limpiar todos</button>
+          <button onclick="cerrarAdmin()">Cerrar</button>
+        </div>
+
+      </div>
+
+      <div id="contenido-admin" style="padding:1rem;">
+        <p class="sin-datos">No hay calificaciones guardadas aún.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ALERTA -->
+  <div class="alerta" id="alerta">
+    ✅ Calificación guardada correctamente
+  </div>
+
+  <script>
+
+  const ADMIN_PASS = "fea2026admin";
+  const STORAGE_KEY = "coreografia_calificaciones";
+
+  const votos = {};
+
+  const secciones = {
+
+    sec1: [
+
+      { id: "s1c1", texto: "La obra se acoge al artículo 3 de la Normativa para la organización y ejecución del Festival Estudiantil de las Artes 2026.", negrita: false },
+      { id: "s1c2", texto: "Se acoge a los objetivos del Festival Estudiantil de las Artes.", negrita: false },
+      { id: "s1c3", texto: "En términos generales la coreografía de proyección folclórica costarricense y los temas musicales que se utilizan sugieren expresiones o manifestaciones que no irrespetan la dignidad y la diversidad humana, los derechos humanos y la equidad de género. ", negrita: false },
+      { id: "s1c4", texto: " Es evidente la intervención y mediación pedagógica de las personas docentes tomando en cuenta que los pasos y movimientos corporales y las letras de las canciones que se utilizan para la realización de la coreografía están acordes con los objetivos del festival y con lo que se establece en la Normativa y en el Manual de disciplinas artísticas. ", negrita: false },
+      { id: "s1c5", texto: " Es evidente la intervención y mediación pedagógica de las personas docentes tomando en cuenta que los pasos y movimientos corporales y las letras de las canciones que se utilizan para la realización de la coreografía están acordes con los objetivos del festival y con lo que se establece en la Normativa y en el Manual de disciplinas artísticas.", negrita: false }
+
+    ],
+
+    sec2: [
+
+      { id: "s2c1", texto: "Respeta la cantidad de integrantes de acuerdo con el Manual de disciplinas artísticas: mínimo 2 estudiantes (no hay máximo).", negrita: false },
+      { id: "s2c2", texto: "Respeta la duración que se indica en el Manual de disciplinas artísticas: máximo 6 minutos.  ", negrita: false },
+      { id: "s2c3", texto: "Transmite ideas, sensaciones o conceptos que reflejan el folclor, las tradiciones y costumbres costarricenses. ", negrita: false },
+      { id: "s2c4", texto: "Representa o desarrolla una historia o anécdota tradicional, típica o de costumbres costarricenses, o bien, describe o representa hechos folclóricos, tradiciones y costumbres de Costa Rica", negrita: false },
+      { id: "s2c5", texto: "Participan únicamente estudiantes en escena.", negrita: false },
+    ],
+
+  sec3: [
+
+    {  
+      id: "s3c1",
+
+      texto: `Uso de ritmos y elementos coreográficos: Presenta diversos pasos, figuras, niveles y formas propios de la proyección folclórica, acordes 
+con la música que se interpreta. Utiliza canciones con uno o varios de los siguientes ritmos considerados típicos, folclóricos o tradicionales 
+costarricenses: parrandera o son suelto, jota, pasillo, vals criollo, polca, corrido costarricense, contradanza, tambito, danza, calipso 
+limonense, tamborito (puntarenense), aire nacional y bolero criollo (no se permiten otros ritmos). Los pasos, figuras, niveles, formas y 
+elementos coreográficos guardan relación directa con un concepto o temática claramente definida. 
+
+      <a href="javascript:void(0)"
+        class="link-anexo"
+        onclick="toggleAnexo()">
+        Ver Anexo 3. Cor. Proy. Folclor. costar.
+      </a>`,
+
+      negrita: false
+    },
+
+    {  
+      id: "s3c2",
+
+      texto: `Aspectos técnico-artísticos, coherencia estética y proyección escénica: Cuida aspectos técnico-artísticos como la coordinación, la presencia 
+escénica, el uso adecuado del espacio escénico, el orden en las formaciones, la limpieza y claridad de los movimientos, la musicalidad, así 
+como la originalidad, creatividad, complejidad y claridad de ideas y conceptos. Presenta vestuario y maquillaje acordes con la música y la 
+temática desarrollada, reforzando la intención artística y la coherencia estética de la propuesta coreográfica.  
+ 
+      <a href="javascript:void(0)"
+        class="link-anexo"
+        onclick="toggleAnexo()">
+        Ver Anexo 3. Coreografía de proyección folclórica costarricense.
+      </a>`,
+
+      negrita: false
+    },
+
+  ]
+
+  };
+
+  function renderizarCriterios(seccionId, criterios) {
+
+    const contenedor = document.getElementById(seccionId + "-criterios");
+
+    contenedor.innerHTML = criterios.map(c => `
+
+      <div class="criterio-item">
+
+        <div class="criterio-texto ${c.negrita ? 'negrita' : ''}">
+          ${c.texto}
+        </div>
+
+        <div class="criterio-botones">
+
+          <button
+            class="btn-si"
+            id="si-${c.id}"
+            onclick="votar('${c.id}', true)">
+            ✔ SÍ
+          </button>
+
+          <button
+            class="btn-no"
+            id="no-${c.id}"
+            onclick="votar('${c.id}', false)">
+            ✘ NO
+          </button>
+
+        </div>
+
+      </div>
+
+    `).join('');
+  }
+
+  function votar(id, esSi) {
+
+    votos[id] = esSi;
+
+    const btnSi = document.getElementById("si-" + id);
+    const btnNo = document.getElementById("no-" + id);
+
+    btnSi.classList.toggle("activo", esSi);
+    btnNo.classList.toggle("activo", !esSi);
+
+    actualizarTotales();
+  }
+
+  function contarSeccion(criterios) {
+
+    return criterios.filter(c => votos[c.id] === true).length;
+  }
+
+  function actualizarTotales() {
+
+    const p1 = contarSeccion(secciones.sec1);
+    const p2 = contarSeccion(secciones.sec2);
+    const p3 = contarSeccion(secciones.sec3);
+
+    const total = p1 + p2 + p3;
+
+    document.getElementById("pts-sec1").textContent = p1 + " pts";
+    document.getElementById("pts-sec2").textContent = p2 + " pts";
+    document.getElementById("pts-sec3").textContent = p3 + " pts";
+
+    document.getElementById("total-sec1").textContent = p1;
+    document.getElementById("total-sec2").textContent = p2;
+    document.getElementById("total-sec3").textContent = p3;
+    document.getElementById("total-general").textContent = total;
+  }
+
+  function guardarCalificacion() {
+
+    const btn = document.querySelector(".btn-guardar");
+
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.disabled = false;
+    }, 2000);
+
+    const juez = document.getElementById("nombre-juez").value.trim();
+    const participante = document.getElementById("nombre-participante").value.trim();
+
+    const coreografia = document.getElementById("nombre-coreografia").value.trim();
+
+    const centro = document.getElementById("centro-educativo").value.trim();
+
+    if (!juez || !participante) {
+      alert("Complete el nombre del juez y participante.");
+      return;
+    }
+
+    const niveles = "secundaria";
+
+    const p1 = contarSeccion(secciones.sec1);
+    const p2 = contarSeccion(secciones.sec2);
+    const p3 = contarSeccion(secciones.sec3);
+
+    const total = p1 + p2 + p3;
+
+    const recomendada = document.getElementById("check-recomendacion").checked;
+
+    const registro = {
+
+      id: Date.now(),
+
+      fecha: new Date().toLocaleString("es-CR"),
+
+      juez,
+      participante,
+      coreografia,
+      centro,
+      niveles,
+
+      sec1: p1,
+      sec2: p2,
+      sec3: p3,
+
+      total,
+      recomendada,
+
+      votos: { ...votos }
+
+    };
+
+    const datos = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+
+    datos.push(registro);
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(datos));
+
+    mostrarAlerta("✅ Calificación guardada correctamente");
+  }
+
+  function mostrarAlerta(msg) {
+
+    const alerta = document.getElementById("alerta");
+
+    alerta.textContent = msg;
+
+    alerta.style.display = "block";
+
+    setTimeout(() => {
+      alerta.style.display = "none";
+    }, 3000);
+  }
+
+  function abrirModalAdmin() {
+
+    document.getElementById("modal-admin").classList.add("visible");
+
+    document.getElementById("input-password").value = "";
+
+    document.getElementById("error-admin").style.display = "none";
+  }
+
+  function cerrarModalAdmin() {
+
+    document.getElementById("modal-admin").classList.remove("visible");
+  }
+
+  function verificarAdmin() {
+
+    const pass = document.getElementById("input-password").value;
+
+    if (pass === ADMIN_PASS) {
+
+      cerrarModalAdmin();
+
+      mostrarAdmin();
+
+    } else {
+
+      document.getElementById("error-admin").style.display = "block";
+    }
+  }
+
+  function mostrarAdmin() {
+
+    const panel = document.getElementById("admin-panel");
+
+    panel.style.display = "block";
+
+    panel.scrollIntoView({ behavior: "smooth" });
+
+    const datos = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+
+    const contenido = document.getElementById("contenido-admin");
+
+    if (datos.length === 0) {
+
+      contenido.innerHTML = `
+        <p class="sin-datos">
+          No hay calificaciones guardadas aún.
+        </p>
+      `;
+
+      return;
+    }
+
+    contenido.innerHTML = `
+
+      <table id="tabla-resultados">
+
+        <thead>
+
+          <tr>
+            <th>Fecha</th>
+            <th>Juez</th>
+            <th>Participante</th>
+            <th>Coreografía</th>
+            <th>Centro</th>
+            <th>Formativos</th>
+            <th>Manual</th>
+            <th>Técnico</th>
+            <th>Total</th>
+            <th>Propuesta</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          ${datos.map(r => `
+
+            <tr>
+
+              <td>${r.fecha}</td>
+              <td>${r.juez}</td>
+              <td>${r.participante}</td>
+              <td>${r.coreografia || '—'}</td>
+              <td>${r.centro || '—'}</td>
+
+              <td>${r.sec1}</td>
+              <td>${r.sec2}</td>
+              <td>${r.sec3}</td>
+
+              <td>
+                <span class="badge-puntos">
+                  ${r.total}
+                </span>
+              </td>
+
+              <td>
+                ${r.recomendada ? '✔ Sí' : '—'}
+              </td>
+
+            </tr>
+
+          `).join('')}
+
+        </tbody>
+
+      </table>
+
+    `;
+  }
+
+  function cerrarAdmin() {
+
+    document.getElementById("admin-panel").style.display = "none";
+  }
+
+  function limpiarDatos() {
+
+    if (confirm("¿Eliminar TODAS las calificaciones?")) {
+
+      localStorage.removeItem(STORAGE_KEY);
+
+      mostrarAdmin();
+
+      mostrarAlerta("🗑 Registros eliminados.");
+    }
+  }
+
+  function exportarCSV() {
+
+    const datos = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+
+    if (datos.length === 0) {
+
+      alert("No hay datos para exportar.");
+
+      return;
+    }
+
+    const cabecera = [
+      "Fecha",
+      "Juez",
+      "Participante",
+      "Coreografía",
+      "Centro",
+      "Nivel",
+      "Formativos",
+      "Manual",
+      "Técnico",
+      "Total",
+      "Propuesta"
+    ];
+
+    const filas = datos.map(r => [
+
+      r.fecha,
+      r.juez,
+      r.participante,
+      r.coreografia,
+      r.centro,
+      r.niveles,
+
+      r.sec1,
+      r.sec2,
+      r.sec3,
+
+      r.total,
+
+      r.recomendada ? "Sí" : "No"
+
+    ].map(v => `"${(v || '').toString().replace(/"/g,'""')}"`).join(","));
+
+    const csv = [cabecera.join(","), ...filas].join("\n");
+
+    const blob = new Blob(
+      ["\uFEFF" + csv],
+      { type: "text/csv;charset=utf-8;" }
+    );
+
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+
+    a.href = url;
+
+    a.download = "coreografia_resultados.csv";
+
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+function toggleAnexo(id = "anexo1") {
+  const anexo = document.getElementById(id);
+
+  if (!anexo) return;
+
+  anexo.classList.toggle("oculto");
+
+  if (!anexo.classList.contains("oculto")) {
+    anexo.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const nombre = localStorage.getItem("username");
+
+    document.getElementById("nombre-juez").value = nombre || "";
+
+    renderizarCriterios("sec1", secciones.sec1);
+    renderizarCriterios("sec2", secciones.sec2);
+    renderizarCriterios("sec3", secciones.sec3);
+
+    actualizarTotales();
+  });
+
+  document.getElementById("input-password").addEventListener("keydown", e => {
+
+    if (e.key === "Enter") {
+
+      verificarAdmin();
+    }
+  });
+
+  </script>
+
+  </body>
+  </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artes Escénicas</title>
+
+  <link rel="stylesheet" href="styleindex.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span>FEA 2026</span>
+  </div>
+
+  <img class="topbar-logo" src="Imagenes/26FEA.png" alt="Logo FEA 2026">
+
+  <div class="header-actions">
+    <a class="btn" href="login.html">Iniciar Sesión</a>
+  </div>
+</header>
+
+<!-- marcas de agua -->
+<img class="imagen-esquina" src="Imagenes/LOGOCIBER.png" alt="Marca de agua">
+<img class="imagen-esquina-iz" src="Imagenes/LogoCTPJFF.png" alt="Marca de agua">
+
+<main>
+
+  <section class="section-home">
+
+    <div class="home-welcome">
+
+      <h1>¡Bienvenido(a)!</h1>
+
+      <p>Accede a las secciones de la página desde aquí.</p>
+
+      <div class="home-cta">
+
+        <a class="nav-btn" href="escenica_rubr/coreografia_popular.html">
+          Coreografía Popular
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/cuenta_cuentos.html">
+          Cuenta Cuentos
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/Folclore.html">
+          Folclore
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/poesia_coral.html">
+          Poesía Coral
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/teatro.html">
+          Teatro
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/coreografia_conceptual.html">
+          Coreografía Conceptual
+        </a>
+
+        <a class="nav-btn" href="escenica_rubr/coreografíadeproyecciónfolclóricacostarricense.html">
+          Coreografía de Proyección Folclórica Costarricense
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const rol = (localStorage.getItem("rol") || "").trim().toLowerCase();
+
+  // si no es usuario autorizado → lo manda al login
+  if (rol !== "escenica") {
+    window.location.href = "login.html";
+  }
+
+});
+</script>
+
+</body>
+</html>

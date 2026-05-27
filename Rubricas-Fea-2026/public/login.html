@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="styleindex.css">
+  </head>
+  <body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span>FEA 2026</span>
+    </div>
+
+    <img class="topbar-logo" src="Imagenes/26FEA.png" alt="Logo FEA 2026">
+
+  </header>
+  <img class="imagen-esquina" src="Imagenes/LOGOCIBER.png" alt="Marca de agua">
+  <img class="imagen-esquina-iz" src="Imagenes/LogoCTPJFF.png" alt="Marca de agua">
+  <main>
+
+    <section class="section-home">
+
+      <div class="login-card">
+
+        <h2>Iniciar Sesión</h2>
+
+        <div class="login-error" id="login-error"></div>
+
+        <div>
+          <label>Usuario</label>
+
+          <input
+            id="login-username"
+            type="text"
+            placeholder="usuario"
+          >
+        </div>
+
+        <div>
+          <label>Contraseña</label>
+
+          <input
+            id="login-password"
+            type="password"
+            placeholder="******"
+          >
+        </div>
+
+        <button id="login-btn" class="btn primary">
+          Entrar
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+ <script type="module">
+
+import { db } from "./firebase.js";
+import {
+  collection,
+  getDocs
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const loginBtn = document.getElementById('login-btn');
+const loginError = document.getElementById('login-error');
+
+loginBtn.addEventListener('click', async () => {
+
+  const username = document.getElementById('login-username').value.trim();
+  const password = document.getElementById('login-password').value.trim();
+
+  try {
+
+    const snap = await getDocs(collection(db, "usuarios"));
+
+    let found = false;
+
+    snap.forEach((doc) => {
+
+      const datos = doc.data();
+
+      const userDB = (datos.usuario || "").trim();
+      const passDB = (datos.password || "").trim();
+
+      if (userDB === username && passDB === password) {
+
+        found = true;
+
+        const rol = (datos.rol || "").trim().toLowerCase();
+
+        // sesión
+        localStorage.setItem("username", datos.nombre);
+        localStorage.setItem("user", userDB);
+        localStorage.setItem("rol", rol);
+
+        // redirección centralizada
+        const rutas = {
+          literarias: "literario.html",
+          visuales: "visuales.html",
+          musicales: "musica.html",
+          escenica: "escenicas.html",
+          admin: "admin.html"
+        };
+
+        window.location.href = rutas[rol] || "index.html";
+      }
+
+    });
+
+    if (!found) {
+      loginError.textContent = "Usuario o contraseña incorrectos";
+    }
+
+  } catch (error) {
+    console.log(error);
+    loginError.textContent = "Error de sistema";
+  }
+
+});
+
+</script>
+  </body>
+  </html>
